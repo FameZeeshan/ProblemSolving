@@ -100,16 +100,108 @@
 //   console.log;
 // }
 // 10.	Write a program that takes two integers as input and outputs whether the two integers have the same sign using a conditional statement and logical operators.
+// let num1 = parseInt(prompt("Type first number: "));
+// let num2 = parseInt(prompt("Type second number: "));
+// if ((num1 > 0 && num2 > 0) || (num1 < 0 && num2 < 0)) {
+//   console.log(`${num1} and ${num2} has same Signs`);
+// } else {
+//   console.log(`${num1} and ${num2} has different Signs`);
+// }
 
 // 11.	Write a program that takes three integers as input and outputs whether the three integers can form a valid triangle using a conditional statement and logical operators.
+
+// ------ Function Method-----------
+// const checkForTriangle = function (num1, num2, num3) {
+//   if (num1 + num2 >= num3 && num2 + num3 >= num1 && num3 + num1 >= num2) {
+//     console.log("Its a triangle");
+//   } else {
+//     console.log("Its not a triangle");
+//   }
+// };
+// checkForTriangle(1, 2, 3);
+// -----------Input Method--------
+// let num1 = parseInt(prompt("Type first Integer: "));
+// let num2 = parseInt(prompt("Type second Integer: "));
+// let num3 = parseInt(prompt("Type third Integer: "));
+// if (num1 + num2 >= num3 && num2 + num3 >= num1 && num3 + num1 >= num2) {
+//   console.log("Its a triangle");
+// } else {
+//   console.log("Its not a triangle");
+// }
+
 // 12.	Write a program that takes two numbers as input and returns their greatest common divisor (GCD).
+// let num1 = parseInt(prompt("Enter first number: "));
+// let num2 = parseInt(prompt("Enter second number: "));
+// function gcd(num1, num2) {
+//   if (num2 === 0) {
+//     return num1;
+//   } else {
+//     return gcd(num2, num1 % num2);
+//   }
+// }
+// let result = gcd(num1, num2);
+// console.log(
+//   "The greatest common divisor of " +
+//     num1 +
+//     " and " +
+//     num2 +
+//     " is " +
+//     result +
+//     "."
+// );
 
 // 13.	Write a program that takes a number as input and returns a boolean indicating if it is a perfect square.
 
+// function isPerfectSquare(num) {
+//   let i = 1;
+//   while (i * i <= num) {
+//     if (i * i === num) {
+//       return true;
+//     }
+//     i++;
+//   }
+//   return false;
+// }
+// let num = parseInt(prompt("Enter a Number: "));
+// if (isPerfectSquare(num)) {
+//   console.log("Its a perfect square");
+// } else {
+//   console.log("Its not a perfect square");
+// }
+
 // 14.	Write a program that takes two numbers as input and returns their greatest common divisor (GCD).
+// let num1 = parseInt(prompt("Enter first number: "));
+// let num2 = parseInt(prompt("Enter second number: "));
+// function gcd(num1, num2) {
+//   if (num2 === 0) {
+//     return num1;
+//   } else {
+//     return gcd(num2, num1 % num2);
+//   }
+// }
+// let result = gcd(num1, num2);
+// console.log(
+//   "The greatest common divisor of " +
+//     num1 +
+//     " and " +
+//     num2 +
+//     " is " +
+//     result +
+//     "."
+// );
 
 // 15.	Write a program to find power of number using given number and power( 43).
-
+let base = prompt("Enter a base number: ");
+let exponent = prompt("Enter an exponent ");
+function power(base, exponent) {
+  let result = 1;
+  for (let i = 0; i < exponent; i++) {
+    result = result * base;
+  }
+  return result;
+}
+let result = power(base, exponent);
+console.log(result);
 // 16.	Write a program that calculates the factorial of a non-negative integer.
 
 // 17.	Write a program that calculates the Fibonacci sequence up to a specified number of terms.
