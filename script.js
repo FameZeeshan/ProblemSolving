@@ -1,29 +1,110 @@
 // Logical program questions based on conditional statements , logical operators and looping:
 
 // 1.	Write a program that checks if a number is positive, negative, or zero, and logs the result to the console using conditional operators.
+// let number = prompt("Please enter a number:");
+
+// if (number > 0) {
+//   console.log("Number is positive");
+// } else if (number < 0) {
+//   console.log("Number is negative");
+// } else {
+//   console.log("Number is Zero");
+// }
 
 // 2.	Write a program that takes two numbers as input and checks if they are both even or both odd, and logs the result to the console using logical operators(using ternary operator).
+// let num1 = prompt("Type first number: ");
+// let num2 = prompt("Type second number: ");
+// const result =
+//   (num1 % 2 === 0 && num2 % 2 === 0) || (num1 % 2 !== 0 && num2 % 2 !== 0)
+//     ? "The numbers are both even or odd"
+//     : "The numbers are not both odd or even";
+// console.log(result);
 
 // 3.	Write a program that takes a year as input and checks if it's a leap year or not, and logs the result to the console using conditional and logical operators.
+// let year = prompt("Enter a year: ");
+// if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+//   console.log(`${year} is a Leap Year`);
+// } else {
+//   console.log(`${year} is not a Leap Year`);
+// }
 
 // 4.	write a program to find the largest of three numbers?
-
+// let num1 = 10;
+// let num2 = 50;
+// let num3 = 30;
+// let largestNumber = num1;
+// if (num2 > largestNumber) {
+//   largestNumber = num2;
+// }
+// if (num3 > largestNumber) {
+//   largestNumber = num3;
+// }
+// console.log(`${largestNumber} is the largest number`);
 // 5.	Write a program that takes two numbers as input and determines if their sum is even.
-
+// let num1 = prompt("Write first number: ");
+// let num2 = prompt("Write second number: ");
+// const sum = Number(num1) + Number(num2);
+// if (sum % 2 === 0) {
+//   console.log(`The sum of ${num1} and ${num2} is even`);
+// } else {
+//   console.log(`The sum of ${num1} and ${num2} is odd`);
+// }
 // 6.	Write a program that takes a number as input and determines if it is a multiple of 3 and 5.
-
+// let number = prompt("Write a number: ");
+// const num = Number(number);
+// if (num % 3 === 0 && num % 5 === 0) {
+//   console.log(`${num} is a multiple of 3 and 5`);
+// } else {
+//   console.log(`${num} is not a multiple of 3 and 5`);
+// }
 // 7.	Write a program that takes three numbers as input and determines if they are all odd or all even(using ternary operator).
+// let num1 = prompt("Type first number: ");
+// let num2 = prompt("Type second number: ");
+// let num3 = prompt("Type third number: ");
+// const allEvenOrOdd =
+//   num1 % 2 === num2 % 2 && num2 % 2 === num3 % 2 ? true : false;
+// if (allEvenOrOdd) {
+//   console.log(`${num1}, ${num2}, and ${num3} are all even or all odd`);
+// } else {
+//   console.log(`${num1}, ${num2}, and ${num3} are not all even or all odd`);
+// }
 
 // 8.	Write a program that takes a number as input and returns "Skill" if it is a multiple of 3, "Safari" if it is a multiple of 5, and "Skill safari" if it is a multiple of both 3 and 5.
-
+// let number = Number(prompt("Enter a number: "));
+// if (number % 3 === 0 && number % 5 === 0) {
+//   console.log("Skill Safari");
+// } else if (number % 3 === 0) {
+//   console.log("Skill");
+// } else if (number % 5 === 0) {
+//   console.log("Safari");
+// } else {
+//   console.log(`The number ${number} is not a multiple of both 3 and 5`);
+// }
 // 9.	Write a program that takes three numbers as input and determines if they form a Pythagorean triplet.
-
+// Pythagoras formula is a^2+b^2=c^2
+// let num1 = Number(prompt("Type first number: "));
+// let num2 = Number(prompt("Type second number: "));
+// let num3 = Number(prompt("Type third number: "));
+// const isPythagoras =
+//   num1 * num1 + num2 * num2 === num3 * num3 ||
+//   num2 * num2 + num3 * num3 === num1 * num1 ||
+//   num3 * num3 + num1 * num1 === num2 * num2
+//     ? true
+//     : false;
+// if (isPythagoras) {
+//   console.log(`${num1} ,${num2} and ${num3} forms a Pythagoras triplet`);
+// } else {
+//   console.log(
+//     `${num1} ,${num2} and ${num3} does not forms a Pythagoras triplet`
+//   );
+//   console.log;
+// }
 // 10.	Write a program that takes two integers as input and outputs whether the two integers have the same sign using a conditional statement and logical operators.
 
 // 11.	Write a program that takes three integers as input and outputs whether the three integers can form a valid triangle using a conditional statement and logical operators.
 // 12.	Write a program that takes two numbers as input and returns their greatest common divisor (GCD).
 
-// 13.	Write a program that takes a number as input and returns a boolean indicating if it is a perfect square. 
+// 13.	Write a program that takes a number as input and returns a boolean indicating if it is a perfect square.
 
 // 14.	Write a program that takes two numbers as input and returns their greatest common divisor (GCD).
 
@@ -37,7 +118,7 @@
 
 // 19.	Write a program in JavaScript that uses a for loop to iterate over the given input and print "Skill" for numbers that are divisible by 3, "Safari" for numbers that are divisible by 5, and "Skill safari" for numbers that are divisible by both 3 and 5.
 
-// 20.	Write a program in JavaScript that uses nested for loops to print out a multiplication table for the numbers from 1 to 3 from that print 
+// 20.	Write a program in JavaScript that uses nested for loops to print out a multiplication table for the numbers from 1 to 3 from that print
 
 // 21.	Write a JavaScript program to construct the following pattern using nested for loop.
 
@@ -72,4 +153,3 @@
 // 6 5 4
 // 10 9 8 7
 // 15 14 13 12 11
-
